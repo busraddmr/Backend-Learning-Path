@@ -42,4 +42,4 @@ fetchUser(1)
 .catch ((hata) => {
   console.log ("hata olustu = " , hata);
 });
- 
+ //test1
