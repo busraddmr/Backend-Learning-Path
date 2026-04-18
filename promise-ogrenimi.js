@@ -26,3 +26,19 @@ const fetchInfo = (loc) =>{
     } ,1001);
 });
 } 
+fetchUser(1)
+.then((user)=>{
+  console.log("kullaniciyi buldum:" , user.name);
+  return fetchKonum(user.name);
+})
+.then ((konum) => {
+  console.log("2.adim: Konum geldi= " , konum);
+  return fetchInfo(konum);
+})
+.then((info) =>{
+  console.log("3.adm: sunucu bilgisi" , info);
+})
+
+.catch ((hata) => {
+  console.log ("hata olustu = " , hata);
+});
