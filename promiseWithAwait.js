@@ -43,6 +43,7 @@ const anaSurec = async () => {
   catch(error){
     console.log("Hata" , error);
   }
-};
+
+}; 
 
 anaSurec();
